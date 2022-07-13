@@ -23,6 +23,9 @@ dev_dependencies:
 
 
   flutter_lints: ^2.0.0
+  flutter_svg: ^0.18.0
+
+
 
 
 flutter:

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meal_app_flutter/category.dart';
 
-const Dummy_Categories = const [
+List<dynamic> Dummy_Categories = [
   Category(
     id: 'c1',
     title: 'Italian',
