@@ -10,6 +10,7 @@ class CategoriesScreen extends StatelessWidget {
         title: Text('MealApp'),
       ),
       body: GridView(
+        padding: EdgeInsets.all(20.0),
         children: Dummy_Categories.map(
           (catData) => CategoryItem(catData.title, catData.color),
         ).toList(),

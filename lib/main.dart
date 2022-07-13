@@ -11,7 +11,19 @@ class MealApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'MealApp',
-      theme: ThemeData(primarySwatch: Colors.blue
+      theme: ThemeData(
+        primarySwatch: Colors.pink,
+        accentColor: Colors.amber,
+        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        fontFamily: 'Raleway',
+        textTheme: ThemeData.light().textTheme.copyWith(
+              bodyText1: TextStyle(
+                color: Color.fromRGBO(20, 51, 51, 1),
+              ),
+              bodyText2: TextStyle(
+                color: Color.fromRGBO(20, 51, 51, 1),
+              ),
+            ),
       ),
       home: CategoriesScreen(),
     );
