@@ -97,7 +97,7 @@ List<dynamic> Dummy_Meals = [
     ],
     title: 'Toast Hawaii',
     imageUrl:
-    'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+        'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
     ingredients: [
       '1 Slice White Bread',
       '1 Slice Ham',
@@ -126,7 +126,7 @@ List<dynamic> Dummy_Meals = [
     ],
     title: 'Classic Hamburger',
     imageUrl:
-    'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
+        'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
     ingredients: [
       '300g Cattle Hack',
       '1 Tomato',
@@ -157,7 +157,7 @@ List<dynamic> Dummy_Meals = [
     ],
     title: 'Wiener Schnitzel',
     imageUrl:
-    'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
+        'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
     ingredients: [
       '8 Veal Cutlets',
       '4 Eggs',
@@ -194,7 +194,7 @@ List<dynamic> Dummy_Meals = [
     ],
     title: 'Salad with Smoked Salmon',
     imageUrl:
-    'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
+        'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
     ingredients: [
       'Arugula',
       'Lamb\'s Lettuce',
@@ -229,7 +229,7 @@ List<dynamic> Dummy_Meals = [
     ],
     title: 'Delicious Orange Mousse',
     imageUrl:
-    'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
+        'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
     ingredients: [
       '4 Sheets of Gelatine',
       '150ml Orange Juice',
@@ -264,7 +264,7 @@ List<dynamic> Dummy_Meals = [
     ],
     title: 'Pancakes',
     imageUrl:
-    'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
+        'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
     ingredients: [
       '1 1/2 Cups all-purpose Flour',
       '3 1/2 Teaspoons Baking Powder',
@@ -295,7 +295,7 @@ List<dynamic> Dummy_Meals = [
     ],
     title: 'Creamy Indian Chicken Curry',
     imageUrl:
-    'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
+        'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
     ingredients: [
       '4 Chicken Breasts',
       '1 Onion',
@@ -328,7 +328,7 @@ List<dynamic> Dummy_Meals = [
     ],
     title: 'Chocolate Souffle',
     imageUrl:
-    'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
+        'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
     ingredients: [
       '1 Teaspoon melted Butter',
       '2 Tablespoons white Sugar',
@@ -379,7 +379,7 @@ List<dynamic> Dummy_Meals = [
     ],
     title: 'Asparagus Salad with Cherry Tomatoes',
     imageUrl:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
     ingredients: [
       'White and Green Asparagus',
       '30g Pine Nuts',
