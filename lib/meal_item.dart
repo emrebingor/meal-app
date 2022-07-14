@@ -15,6 +15,38 @@ class MealItem extends StatelessWidget {
       required this.complexity,
       required this.duration});
 
+  String get complexityText {
+    switch (complexity) {
+      case Complexity.Simple:
+        return 'Simple';
+        break;
+      case Complexity.Challenging:
+        return 'Challenging';
+        break;
+      case Complexity.Hard:
+        return 'Hard';
+        break;
+      default:
+        return 'Unknown';
+    }
+  }
+
+  String get affordabilityText {
+    switch (affordability) {
+      case Affordability.Affordable:
+        return 'Affordable';
+        break;
+      case Affordability.Luxurious:
+        return 'Luxurious';
+        break;
+      case Affordability.Pricey:
+        return 'Pricey';
+        break;
+      default:
+        return 'Unknown';
+    }
+  }
+
   void selectMeal() {}
 
   @override
@@ -43,11 +75,67 @@ class MealItem extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
+                Positioned(
+                  bottom: 20,
+                  right: 10,
+                  child: Container(
+                    padding: EdgeInsets.symmetric(
+                      vertical: 5,
+                      horizontal: 20,
+                    ),
+                    width: 220,
+                    color: Colors.black54,
+                    child: Text(
+                      title,
+                      style: TextStyle(
+                        fontSize: 26.0,
+                        color: Colors.white,
+                      ),
+                      softWrap: true,
+                      overflow: TextOverflow.fade,
+                    ),
+                  ),
+                ),
               ],
+            ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  RecipeInfo(info: '$duration min', icon: Icons.schedule),
+                  RecipeInfo(info: '$complexityText', icon: Icons.work),
+                  RecipeInfo(info: '$affordabilityText', icon: Icons.attach_money),
+                ],
+              ),
             ),
           ],
         ),
       ),
+    );
+  }
+}
+
+
+class RecipeInfo extends StatelessWidget {
+
+  final String info;
+  final IconData icon;
+
+  RecipeInfo({required this.info, required this.icon});
+
+  @override
+  Widget build(BuildContext context) {
+    return   Row(
+      children: <Widget>[
+        Icon(
+          icon,
+        ),
+        SizedBox(
+          width: 6,
+        ),
+        Text(info),
+      ],
     );
   }
 }
