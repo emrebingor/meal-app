@@ -8,11 +8,7 @@ class CategoriesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('MealApp'),
-      ),
-      body: GridView(
+    return GridView(
         padding: EdgeInsets.all(20.0),
         children: Dummy_Categories.map(
           (catData) => CategoryItem(
@@ -26,7 +22,6 @@ class CategoriesScreen extends StatelessWidget {
             childAspectRatio: 1.5,
             crossAxisSpacing: 20,
             mainAxisSpacing: 20),
-      ),
-    );
+      );
   }
 }
