@@ -15,8 +15,8 @@ class MealApp extends StatelessWidget {
     return MaterialApp(
       title: 'MealApp',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
-        accentColor: Colors.amber,
+        primarySwatch: Colors.deepPurple,
+        accentColor: Colors.lightGreenAccent,
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
