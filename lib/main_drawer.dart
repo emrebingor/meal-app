@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:meal_app_flutter/tabs_screen.dart';
+import 'package:meal_app_flutter/settings_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   @override
@@ -24,8 +26,20 @@ class MainDrawer extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          DrawerListTile(title: 'Meals', onTap: () {}, icon: Icons.restaurant),
-          DrawerListTile(title: 'Settings', onTap: () {}, icon: Icons.settings),
+          DrawerListTile(
+            title: 'Meals',
+            onTap: () {
+              Navigator.pushReplacementNamed(context, TabsScreen.id);
+            },
+            icon: Icons.restaurant,
+          ),
+          DrawerListTile(
+            title: 'Settings',
+            onTap: () {
+              Navigator.pushReplacementNamed(context, SettingsScreen.id);
+            },
+            icon: Icons.settings,
+          ),
         ],
       ),
     );

@@ -4,6 +4,8 @@ import 'package:meal_app_flutter/categories_screen.dart';
 import 'package:meal_app_flutter/category_meal_screen.dart';
 import 'meal_detail_screen.dart';
 import 'package:meal_app_flutter/tabs_screen.dart';
+import 'package:meal_app_flutter/settings_screen.dart';
+import 'package:meal_app_flutter/favorites_screen.dart';
 
 void main() {
   runApp(MealApp());
@@ -34,6 +36,7 @@ class MealApp extends StatelessWidget {
         CategoriesScreen.id: (context) => CategoriesScreen(),
         CategoryMealScreen.id: (context) => CategoryMealScreen(),
         MealDetailScreen.id: (context) => MealDetailScreen(),
+        SettingsScreen.id: (context) => SettingsScreen(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(builder: (context) => CategoriesScreen(),);
