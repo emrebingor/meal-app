@@ -4,6 +4,11 @@ import 'package:meal_app_flutter/main_drawer.dart';
 class SettingsScreen extends StatefulWidget {
   static const String id = 'settings_screen';
 
+  final Function saveFilters;
+  final Map<String, bool> currentFilters;
+
+  SettingsScreen(this.saveFilters, this.currentFilters);
+
   @override
   State<SettingsScreen> createState() => _SettingsScreenState();
 }
@@ -14,11 +19,34 @@ class _SettingsScreenState extends State<SettingsScreen> {
   bool _vegetarian = false;
   bool _vegan = false;
 
+ @override
+ void initState(){
+   _glutenFree = widget.currentFilters['gluten'] ?? false;
+   _vegan = widget.currentFilters['vegan'] ?? false;
+   _vegetarian = widget.currentFilters['vegetarian'] ?? false;
+   _lactoseFree = widget.currentFilters['lactose'] ?? false; 
+   super.initState();
+ }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Settings'),
+        actions: <Widget>[
+          IconButton(
+            onPressed: () {
+              final selectedFilters = {
+                'gluten': _glutenFree,
+                'lactose': _lactoseFree,
+                'vegan': _vegan,
+                'vegetarian': _vegetarian,
+              };
+              widget.saveFilters(selectedFilters);
+            },
+            icon: Icon(Icons.save),
+          ),
+        ],
       ),
       drawer: MainDrawer(),
       body: Column(
