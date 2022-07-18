@@ -5,6 +5,11 @@ import 'package:meal_app_flutter/meal.dart';
 class MealDetailScreen extends StatelessWidget {
   static const String id = 'meal_detail_screen';
 
+  final Function addFavorite;
+  final Function isFavorite;
+
+  MealDetailScreen(this.addFavorite, this.isFavorite);
+
   @override
   Widget build(BuildContext context) {
     final mealId = ModalRoute.of(context)?.settings.arguments as String;
@@ -61,14 +66,11 @@ class MealDetailScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Theme.of(context).accentColor,
         child: Icon(
-          Icons.delete,
-          color: Colors.white,
+          isFavorite(mealId) ? Icons.star : Icons.star_border,
         ),
-        onPressed: () {
-          Navigator.pop(context, mealId);
-        },
+        onPressed: () => addFavorite(mealId),
       ),
     );
   }
